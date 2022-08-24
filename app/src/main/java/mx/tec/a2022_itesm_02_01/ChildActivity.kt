@@ -21,11 +21,42 @@ class ChildActivity : AppCompatActivity() {
         myTextView.text = miTextoRecibido
         myNumberView.text = miNumeroRecibido.toString()
 
-        Log.d("MYTAG", "Fin de la ejecucion onCreate")
+        Log.d("MYTAG", "Fin de la ejecucion onCreate de ChildActivity")
     }
 
+
     override fun onStart() {
-        Log.d("MYTAG", "Fin de la ejecucion onCreate")
+        Log.d("MYTAG", "Fin de la ejecucion OnStart de ChildActivity")
         super.onStart()
+    }
+
+    override fun onResume() {
+        Log.d("MYTAG", "Fin de la ejecucion OnResume de ChildActivity")
+        super.onResume()
+    }
+
+    override fun onPause() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion onPause de ChildActivity")
+        super.onPause()
+    }
+
+
+    override fun onStop() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion OnStop de ChildActivity")
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion onDestroy de ChildActivity")
+        super.onDestroy()
+    }
+
+    override fun onRestart() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion onRestart de ChildActivity")
+        super.onRestart()
     }
 }

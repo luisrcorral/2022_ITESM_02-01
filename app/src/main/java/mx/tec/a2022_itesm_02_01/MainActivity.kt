@@ -42,4 +42,31 @@ class MainActivity : AppCompatActivity() {
         Log.d("MYTAG", "Fin de la ejecucion OnResume de MainActivity")
         super.onResume()
     }
+
+    override fun onPause() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion onPause de MainActivity")
+        super.onPause()
+    }
+
+
+    override fun onStop() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion OnStop de MainActivity")
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion onDestroy de MainActivity")
+        super.onDestroy()
+    }
+
+    override fun onRestart() {
+        // call the superclass method first
+        Log.d("MYTAG", "Fin de la ejecucion onRestart de MainActivity")
+        super.onRestart()
+    }
+
+
 }
